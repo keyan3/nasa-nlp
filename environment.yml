@@ -1,0 +1,20 @@
+name: weed_nlp
+channels:
+  - defaults
+dependencies:
+  - python=3.5
+  - jupyterlab
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - nltk
+  - autopep8
+  - joblib
+  - tqdm
+  - gensim
+  - cython
+  - ipython
+  - ipython_genutils
+prefix: /home/jiwonkim/anaconda3/envs/weed_nlp

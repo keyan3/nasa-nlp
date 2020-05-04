@@ -1,0 +1,29 @@
+#!/bin/bash
+echo ================ Creating directories... ================
+
+files=(datasets/all/ models/ results/all/ results/narrative/ results/synopsis/)
+for file in ${files[@]}
+do
+    echo mkdir -p $file
+    mkdir -p $file
+done
+printf "================ Finished creating directories ================\n\n"
+
+pyfiles=(generate_doc2vec.py bag_of_words.py tfidf.py cosine_analysis.py)
+for file in ${pyfiles[@]}
+do
+    echo ================ Running python3 $file ================
+    python3 $file
+    if [ $? -eq 1 ]; then
+        echo Failed. Make sure you import all the correct libraries
+        break
+    fi
+    echo ================ Finished python3 $file ================
+    printf "\n\n"
+done
+
+removefiles=(datasets/narrative/ datasets/synopsis/ datasets/all/)
+for file in ${removefiles[@]}
+do
+    rm -rf $file
+done
