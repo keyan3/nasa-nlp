@@ -1,2 +1,9 @@
 *.csv
 .DS_Store
+*.ipynb
+*.pyc
+*.zip
+coverage-2.png
+coverage-6.png
+coverage-12.png
+coverage-18.png

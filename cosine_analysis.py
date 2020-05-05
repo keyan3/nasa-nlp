@@ -8,7 +8,7 @@ import sklearn.metrics
 from datetime import datetime, timedelta
 
 # sliding window for cosine similarity calculation. Must be an even number
-sliding_window = 18
+sliding_window = 2
 
 # helps us print our progress while script runs
 column = 0
