@@ -1,7 +1,5 @@
 # ASRS cosine similarity analysis
 
-This repo contains code used in [Berkeley Institute for Data Science](https://bids.berkeley.edu/) research on the aviation industry; more info on the project can be found [here](https://medium.com/@nasseri.keyan/using-nlp-to-enrich-findings-in-the-social-sciences-d861b04e6bfb). Specifically, this script uses cosine similarity to compare different aviation incident reports from NASA's ASRS dataset.
-
 ## Preprocessing
 1. All string columns are lowercased (narrative, synopsis, airporttraconcode1).
 2. All rows with an NA value for narrative, synposis, tracon, or date removed. 
