@@ -1,6 +1,6 @@
 # ASRS cosine similarity analysis
 
-## Part of [Berkeley Institute for Data Science](https://bids.berkeley.edu) research on the aviation industry
+### Part of [Berkeley Institute for Data Science](https://bids.berkeley.edu) research on the aviation industry
 
 ## Preprocessing
 1. All string columns are lowercased (narrative, synopsis, airporttraconcode1).
