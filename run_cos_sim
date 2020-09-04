@@ -9,7 +9,7 @@ do
 done
 printf "================ Finished creating directories ================\n\n"
 
-pyfiles=(generate_doc2vec.py bag_of_words.py tfidf.py cosine_analysis.py)
+pyfiles=(cossim/generate_doc2vec.py cossim/bag_of_words.py cossim/tfidf.py cossim/cosine_analysis.py)
 for file in ${pyfiles[@]}
 do
     echo ================ Running python3 $file ================
